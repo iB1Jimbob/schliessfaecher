@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuvertrag</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <img src="https://www.kkg.berlin/site/templates/images/logo.svg" alt="">
+    <h1>Schließfach Neuvertrag</h1>
+    <div class="form">
+        <div class="general-form">
+            <h3>Allgemein</h3>
+
+            <h4>Mieter</h4>
+            <h5>Name des Mieters</h5>
+            <input required type="text" name="renterName" id="renterName" autocomplete="name">
+            <br>
+
+            <div class="contact">
+                <h5>Telefon privat</h5>
+                <input required type="tel" name="phonePrivate" id="phonePrivate" autocomplete="tel">
+            </div>
+
+            <div class="contact">
+                <h5>E-Mail</h5>
+                <input required type="email" name="email" id="email" autocomplete="email">
+            </div>
+
+
+            <h4>Nutzer</h4>
+            <h5>Name des Nutzers</h5>
+            <input required type="text" name="userName" id="userName" autocomplete="name">
+            <br>
+
+            <div class="contact">
+                <h5>Telefon privat</h5>
+                <input required type="tel" name="userPhonePrivate" id="userPhonePrivate" autocomplete="tel">
+            </div>
+
+            <div class="contact">
+                <h5>E-Mail</h5>
+                <input required type="email" name="userEmail" id="userEmail" autocomplete="email">
+            </div>
+
+            <h5>Derzeitige Körpergröße des Nutzers</h5>
+            <input required type="number" name="userSize" id="userSize" min="0" max="300">
+            <p>cm</p>
+
+            <h5>Jahr des Beginns der Anmietung</h5>
+            <input required type="number" name="yearOfRenting" id="yearOfRenting" min="2000" max="2050">
+
+            <h5>Klasse bei Beginn der Anmietung</h5>
+            <input required type="text" name="classOfRenting" id="classOfRenting">
+
+            <h5>Gewünschte Fachgröße</h5>
+            <div class="lockerSize">
+                <input required type="radio" name="lockerSize" id="lockerSize1" value="A" checked>
+                <label for="lockerSize1">A</label>
+                <input required type="radio" name="lockerSize" id="lockerSize2" value="B">
+                <label for="lockerSize2">B</label>
+            </div>
+        </div>
+        <div class="sepa-form">
+            <h3>SEPA - Lastschriftmandat</h3>
+            <!-- Rechtliche Hinweise -->
+            <div class="sepa-legal">
+                <p>
+                    Hiermit ermächtige ich den „Förderverein des Käthe-Kollwitz-Gymnasiums Berlin Prenzlauer Berg e.V.“ die Beträge für ein
+                    Schließfach der Schule jährlich, sowie beim Erstvertrag zzgl. eine Kaution in Höhe von 15,00 € von meinem unten stehenden
+                    Konto mittels Lastschrift einzuziehen.
+                    Zugleich weise ich mein Kreditinstitut an, die vom Förderverein des Käthe Kollwitz Gymnasium e.V. auf mein Konto gezogenen
+                    Lastschriften einzulösen.
+                    Wenn mein Konto die erforderliche Deckung nicht aufweist, besteht seitens des kontoführenden Instituts keine Verpflichtung zur
+                    Einlösung.
+                </p>
+            </div>
+
+            <!-- Für Kind -->
+            <h5>Für Kind</h5>
+            <input required type="text" name="child" id="child" autocomplete="name">
+
+            <!-- Kontoinhaber -->
+            <h5>Kontoinhaber (Vor- und Nachname)</h5>
+            <input required type="text" name="accountHolder" id="accountHolder" autocomplete="cc-name">
+
+            <!-- Name des Kreditinstitutes -->
+            <h5>Name des Kreditinstitutes</h5>
+            <input required type="text" name="creditInstitute" id="creditInstitute" autocomplete="organization">
+
+            <!-- IBAN -->
+            <div class="letter-input">
+                <h5>IBAN</h5>
+                <p>DE</p>
+                <input required type="text" name="letter1" class="iban letter" maxlength="1">
+                <input required type="text" name="letter2" class="iban letter" maxlength="1">
+                <p>/</p>
+                <input required type="text" name="letter3" class="iban letter" maxlength="1">
+                <input required type="text" name="letter4" class="iban letter" maxlength="1">
+                <input required type="text" name="letter5" class="iban letter" maxlength="1">
+                <input required type="text" name="letter6" class="iban letter" maxlength="1">
+                <p>/</p>
+                <input required type="text" name="letter7" class="iban letter" maxlength="1">
+                <input required type="text" name="letter8" class="iban letter" maxlength="1">
+                <input required type="text" name="letter9" class="iban letter" maxlength="1">
+                <input required type="text" name="letter10" class="iban letter" maxlength="1">
+                <p>/</p>
+                <input required type="text" name="letter11" class="iban letter" maxlength="1">
+                <input required type="text" name="letter12" class="iban letter" maxlength="1">
+                <input required type="text" name="letter13" class="iban letter" maxlength="1">
+                <input required type="text" name="letter14" class="iban letter" maxlength="1">
+                <p>/</p>
+                <input required type="text" name="letter15" class="iban letter" maxlength="1">
+                <input required type="text" name="letter16" class="iban letter" maxlength="1">
+                <input required type="text" name="letter17" class="iban letter" maxlength="1">
+                <input required type="text" name="letter18" class="iban letter" maxlength="1">
+                <p>/</p>
+                <input required type="text" name="letter19" class="iban letter" maxlength="1">
+                <input required type="text" name="letter20" class="iban letter" maxlength="1">
+            </div>
+            <!-- BIC -->
+            <div class="letter-input">
+                <h5>BIC</h5>
+                <input required type="text" name="letter1" class="bic letter" maxlength="1">
+                <input required type="text" name="letter2" class="bic letter" maxlength="1">
+                <input required type="text" name="letter3" class="bic letter" maxlength="1">
+                <input required type="text" name="letter4" class="bic letter" maxlength="1">
+                <input required type="text" name="letter5" class="bic letter" maxlength="1">
+                <input required type="text" name="letter6" class="bic letter" maxlength="1">
+                <input required type="text" name="letter7" class="bic letter" maxlength="1">
+                <p>/</p>
+                <input required type="text" name="letter8" class="bic letter" maxlength="1">
+                <input required type="text" name="letter9" class="bic letter" maxlength="1">
+                <input required type="text" name="letter10" class="bic letter" maxlength="1">
+            </div>
+            <!-- Dieses Mandat gilt ab-->
+            <h5>Dieses Mandat gilt ab</h5>
+            <input required type="date" name="mandateDate" id="mandateDate">
+        </div>
+        <div class="terms-and-conditions">
+            <input type="checkbox" name="terms" id="terms" required>
+            <label for="terms">Ich akzeptiere die <a href="terms.html">Nutzungsbedingungen</a>.</label>
+        </div>
+        <button type="submit">Kostenpflichtig bestellen</button>
+    </div>
+
+    <footer>
+        <p>
+            <a href="https://www.kkg.berlin/impressum/">Impressum</a>
+            <a href="https://www.kkg.berlin/datenschutzerklaerung/">Datenschutz</a>
+            <a href="admin/index.html">Admin</a>
+        </p>
+    </footer>
+</body>
+</html>

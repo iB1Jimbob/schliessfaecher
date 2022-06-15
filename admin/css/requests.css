@@ -1,0 +1,12 @@
+.col {
+    flex: 1;
+}
+
+#requests .col {
+    padding: 10px;
+}
+
+#requests .col.size {
+   font-weight: bold;
+    width: 20px;
+}

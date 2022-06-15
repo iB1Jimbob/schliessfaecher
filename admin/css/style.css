@@ -1,0 +1,148 @@
+:root {
+    --free-color: #b6b6b6;
+    --occupied-color: #5fc55f;
+    --expired-soon-color: #ffc55f;
+    --expired-color: #ff5f5f;
+    --broken-color: #2a2a2a;
+}
+
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #ffffff;
+    height: calc(100vh - 2 * 50px);
+    width: calc(100vw - 2 * 50px);
+    padding: 50px;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+.active {
+    color: #000000 !important;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 5vh 5vw 3vh;
+}
+
+nav ul li a {
+    color: #CCCCCC;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Colors */
+
+.free {
+    --status-color: #B6B6B6FF;
+    --text-color: #000000;
+}
+
+.occupied {
+    --status-color: var(--occupied-color);
+    --text-color: #326732;
+}
+
+.expired-soon {
+    --status-color: #FFC55FFF;
+    --text-color: #564527;
+}
+
+.expired {
+    --status-color: #FF5F5FFF;
+    --text-color: #5b2222;
+}
+
+.broken {
+    --status-color: #2A2A2AFF;
+    --text-color: #d7d7d7;
+}
+
+.content {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Custom table */
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* List */
+
+.list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    height: 500px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border: 1px solid #000000;
+    margin: 5px;
+    padding: 5px;
+}
+
+.row.header {
+    background: #1f1f1f;
+    color: #FFFFFF;
+    padding: 8px;
+    width: calc(100% - 7px);
+}
+
+.row:not(.header):hover {
+    background: #f5f5f5;
+    cursor: pointer;
+}
