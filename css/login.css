@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#inputs p {
+    font-family: 'Helvitica', sans-serif;
+    font-size: 1.5em;
+}
+
+#inputs p input[type=text] {
+    font-family: 'Helvitica', sans-serif;
+    font-size: 1em;
+    border: none;
+    border-bottom: 3px solid #ccc;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#inputs p input:focus {
+    outline: none;
+}
+
+#inputs p input[type=checkbox] {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 1ch;
+}
+
+#inputs button {
+    font-family: 'Helvitica', sans-serif;
+    font-size: 1.5em;
+    padding: 10px;
+    border: solid 3px black;
+    background-color: #d9d9d9;
+    color: black;
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#inputs button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
