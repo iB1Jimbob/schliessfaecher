@@ -26,7 +26,6 @@ document.querySelector('button#login').addEventListener('click', () => {
         })
     }).then(response => response.json()).then(data => {
         if (data.success) {
-            window.location.href = `index.html`;
             if (stayLoggedIn) {
                 localStorage.setItem('username', username.value);
                 localStorage.setItem('password', password.value);
@@ -34,6 +33,7 @@ document.querySelector('button#login').addEventListener('click', () => {
                 sessionStorage.setItem('username', username.value);
                 sessionStorage.setItem('password', password.value);
             }
+            window.location.href = 'index.html';
         } else {
             data.message ? alert(data.message) : alert('Login fehlgeschlagen! Versuche es erneut.');
             localStorage.clear();
